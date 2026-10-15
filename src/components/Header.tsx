@@ -7,7 +7,6 @@ import {
   ShoppingCart,
   Search,
   ShieldCheck,
-  FileText,
   Package,
   Layers,
   ChevronDown,
@@ -64,7 +63,7 @@ export const Header: React.FC = () => {
       backdropFilter: 'blur(16px)',
       borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
     }}>
-      {/* Top Banner: Academic Project Notice & Quick Stats */}
+      {/* Top Banner: Store Features & Dispatch Stats */}
       <div style={{
         background: 'linear-gradient(90deg, #1e3a8a 0%, #0f172a 50%, #1e293b 100%)',
         padding: '6px 0',
@@ -73,27 +72,12 @@ export const Header: React.FC = () => {
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="badge badge-amber" style={{ fontSize: '0.7rem' }}>BCA PROJECT 2024-25</span>
+            <span className="badge badge-blue" style={{ fontSize: '0.7rem' }}>PREMIUM AUTO SPARES</span>
             <span style={{ color: '#cbd5e1' }}>
-              Autonomous Project by <strong>Sree Harish P K, Varun K S & Venkat Bhanu Prasad</strong>
+              100% Genuine OEM & High-Performance Automobile Components
             </span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <button
-              onClick={() => setActiveModal('report')}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '5px',
-                color: '#38bdf8',
-                fontWeight: 600,
-                fontSize: '0.75rem',
-                cursor: 'pointer'
-              }}
-            >
-              <FileText size={13} /> View Full Report & UML Schemas
-            </button>
-            <span style={{ color: '#64748b' }}>|</span>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span className="pulse-dot"></span>
               <span style={{ color: '#94a3b8', fontSize: '0.75rem' }}>Pan-India Express Dispatch Active</span>
@@ -429,19 +413,9 @@ export const Header: React.FC = () => {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <button
-              onClick={() => setActiveModal('report')}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                fontSize: '0.82rem',
-                fontWeight: 600,
-                color: '#93c5fd'
-              }}
-            >
-              <FileText size={14} /> Academic Documentation & ERD
-            </button>
+            <span style={{ fontSize: '0.82rem', color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <ShieldCheck size={14} color="#10b981" /> 100% Genuine OEM Warranty
+            </span>
           </div>
         </div>
       </nav>

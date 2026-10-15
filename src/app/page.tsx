@@ -18,7 +18,6 @@ import {
   Tag,
   ArrowUpDown,
   Sparkles,
-  FileText,
   RotateCcw,
   Zap,
   Disc,
@@ -29,7 +28,6 @@ import {
   Wind,
   CircleDot
 } from 'lucide-react';
-import { PROJECT_REPORT_METADATA } from '../data/mockData';
 
 export default function HomePage() {
   const {
@@ -404,74 +402,6 @@ export default function HomePage() {
 
           {/* Signed & Authorized Brands */}
           <BrandsSection />
-
-          {/* Academic Report Showcase Banner */}
-          <section style={{
-            padding: '3.5rem 0',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-            background: 'rgba(10, 14, 23, 0.6)'
-          }}>
-            <div className="container">
-              <div className="glass-panel" style={{
-                padding: '2.5rem',
-                border: '1px solid rgba(59, 130, 246, 0.3)',
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: '2rem',
-                alignItems: 'center'
-              }}>
-                <div>
-                  <span className="badge badge-blue" style={{ marginBottom: '10px' }}>
-                    <FileText size={12} /> BCA ACADEMIC CAPSTONE
-                  </span>
-                  <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: '10px' }}>
-                    Developed from <span className="gradient-text">Auto_Parts_Report_2.docx</span>
-                  </h3>
-                  <p style={{ color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.4rem' }}>
-                    This modern Next.js 16 implementation is the direct production evolution of the BCA VI Semester project submitted to <strong>{PROJECT_REPORT_METADATA.institution}</strong> by <strong>Sree Harish. P K, Varun K S, and Venkat Bhanu Prasad</strong>.
-                  </p>
-
-                  <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                    <button
-                      onClick={() => setActiveModal('report')}
-                      className="btn-primary"
-                    >
-                      <FileText size={16} /> Open Full Report & UML Diagrams
-                    </button>
-                  </div>
-                </div>
-
-                <div style={{
-                  background: 'var(--bg-input)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: '1.5rem',
-                  border: '1px solid rgba(255, 255, 255, 0.08)'
-                }}>
-                  <h4 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '12px', color: '#f8fafc' }}>
-                    System Specifications & Schema
-                  </h4>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.82rem', color: '#cbd5e1' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ color: '#94a3b8' }}>Database Engine:</span>
-                      <strong>MySQL (14 Relational Tables)</strong>
-                    </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ color: '#94a3b8' }}>Frontend Upgrade:</span>
-                      <strong>Next.js 16 • React 19 • TypeScript</strong>
-                    </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ color: '#94a3b8' }}>Guidance:</span>
-                      <span>Mrs. Parvathy J & Mrs. Anuradha P</span>
-                    </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ color: '#94a3b8' }}>Academic Year:</span>
-                      <span>2024 - 2025</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </main>
       )}
 

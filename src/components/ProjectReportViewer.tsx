@@ -51,10 +51,10 @@ export const ProjectReportViewer: React.FC = () => {
             </div>
             <div>
               <h3 style={{ fontSize: '1.2rem', fontWeight: 800 }}>
-                Academic Project Report Documentation
+                System Architecture & Database Specifications
               </h3>
               <p style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
-                Auto_Parts_Report_2.docx • Indian Academy Degree College Autonomous
+                Technical Schema & Specification Documentation
               </p>
             </div>
           </div>
@@ -78,7 +78,7 @@ export const ProjectReportViewer: React.FC = () => {
             { id: 'overview', label: 'Report Overview & Abstract', icon: FileText },
             { id: 'uml', label: 'UML & System Architecture', icon: Layers },
             { id: 'database', label: '14 MySQL Tables Schema', icon: Database },
-            { id: 'team', label: 'Student Team & Guide', icon: Award }
+            { id: 'team', label: 'Engineering Team & Standards', icon: Award }
           ].map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -118,14 +118,14 @@ export const ProjectReportViewer: React.FC = () => {
                 borderRadius: 'var(--radius-lg)',
                 padding: '1.5rem'
               }}>
-                <span className="badge badge-amber" style={{ marginBottom: '8px' }}>
-                  FINAL YEAR PROJECT VI SEMESTER BCA 2024-25
+                <span className="badge badge-blue" style={{ marginBottom: '8px' }}>
+                  ENTERPRISE PLATFORM ARCHITECTURE
                 </span>
                 <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '6px' }}>
                   {PROJECT_REPORT_METADATA.title}
                 </h3>
                 <p style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                  Submitted in partial fulfillment of the requirements for VI Semester Bachelor of Computer Applications (BCA) at <strong>{PROJECT_REPORT_METADATA.institution}</strong>.
+                  Technical documentation, ER diagrams, and relational schema specifications for the ApexAuto parts selling and services platform.
                 </p>
               </div>
 
@@ -195,7 +195,7 @@ export const ProjectReportViewer: React.FC = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.8rem' }}>
               <div>
                 <h4 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '6px' }}>
-                  Architecture & Design Artifacts (From Auto_Parts_Report_2.docx)
+                  Architecture & Design Artifacts
                 </h4>
                 <p style={{ fontSize: '0.85rem', color: '#94a3b8' }}>
                   Extracted diagrams illustrating the Use Case workflows, ER Entity-Relationship data model, and Data Flow Diagrams (DFD Level 0 & 1).
@@ -329,10 +329,10 @@ export const ProjectReportViewer: React.FC = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.8rem' }}>
               <div>
                 <h4 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '6px' }}>
-                  Project Developers & Guidance
+                  Engineering Team & Architecture Review
                 </h4>
                 <p style={{ fontSize: '0.85rem', color: '#94a3b8' }}>
-                  Indian Academy Degree College - Autonomous, Bangalore • Department of Computer Science
+                  ApexAuto Platform Directorate • Systems & Architecture Division
                 </p>
               </div>
 
@@ -388,32 +388,32 @@ export const ProjectReportViewer: React.FC = () => {
               }}>
                 <div>
                   <span style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    Internal Project Guide
+                    Architecture Review
                   </span>
                   <div style={{ fontSize: '1rem', fontWeight: 700, color: '#f8fafc', marginTop: '2px' }}>
                     {PROJECT_REPORT_METADATA.internalGuide}
                   </div>
-                  <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Assistant Professor</div>
+                  <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Technical Architecture Division</div>
                 </div>
 
                 <div>
                   <span style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    Head of Department (CS)
+                    Standards Board
                   </span>
                   <div style={{ fontSize: '1rem', fontWeight: 700, color: '#f8fafc', marginTop: '2px' }}>
                     {PROJECT_REPORT_METADATA.headOfDepartment}
                   </div>
-                  <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Department of Computer Science</div>
+                  <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Quality & Compliance Group</div>
                 </div>
 
                 <div>
                   <span style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    Principal
+                    Directorate
                   </span>
                   <div style={{ fontSize: '1rem', fontWeight: 700, color: '#f8fafc', marginTop: '2px' }}>
                     {PROJECT_REPORT_METADATA.principal}
                   </div>
-                  <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Indian Academy Autonomous</div>
+                  <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Platform Engineering Operations</div>
                 </div>
               </div>
             </div>

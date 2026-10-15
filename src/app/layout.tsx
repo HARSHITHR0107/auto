@@ -12,8 +12,8 @@ import { ProjectReportViewer } from '../components/ProjectReportViewer';
 export const metadata: Metadata = {
   title: 'ApexAuto | Auto Parts E-Commerce & Certified Mechanic Hub (APESW)',
   description: '100% Genuine OEM & high-performance aftermarket auto parts with precision vehicle fitment guarantee. Book certified doorstep mechanics with real-time tracking.',
-  keywords: ['Auto Parts', 'Car Spares', 'Doorstep Mechanic', 'Engine Oil', 'Brembo Brake Pads', 'Bosch Spark Plugs', 'Automotive Services', 'BCA Project APESW'],
-  authors: [{ name: 'Sree Harish P K, Varun K S, Venkat Bhanu Prasad' }],
+  keywords: ['Auto Parts', 'Car Spares', 'Doorstep Mechanic', 'Engine Oil', 'Brembo Brake Pads', 'Bosch Spark Plugs', 'Automotive Services', 'APESW Auto Hub'],
+  authors: [{ name: 'ApexAuto Engineering Team' }],
   openGraph: {
     title: 'ApexAuto | Auto Parts E-Commerce & Mechanic Services (APESW)',
     description: '100% Genuine OEM & high-performance auto parts with certified mechanic service booking.',

@@ -594,8 +594,8 @@ export const INITIAL_MECHANICS: Mechanic[] = [
 export const INITIAL_ORDERS: Order[] = [
   {
     id: 'ORD-84920',
-    customerName: 'Sree Harish P K',
-    customerEmail: 'sreeharish.pk@apesw.edu.in',
+    customerName: 'Rahul Sharma',
+    customerEmail: 'rahul.sharma@example.com',
     customerPhone: '+91 98450 12345',
     shippingAddress: '42, Hennur Main Road, Kalyan Nagar',
     city: 'Bangalore',
@@ -632,8 +632,8 @@ export const INITIAL_ORDERS: Order[] = [
   },
   {
     id: 'ORD-72914',
-    customerName: 'Varun K S',
-    customerEmail: 'varun.ks@apesw.edu.in',
+    customerName: 'Amit Patel',
+    customerEmail: 'amit.patel@example.com',
     customerPhone: '+91 97412 88990',
     shippingAddress: '15/B, Outer Ring Road, Hebbal',
     city: 'Bangalore',
@@ -662,8 +662,8 @@ export const INITIAL_ORDERS: Order[] = [
   },
   {
     id: 'ORD-65103',
-    customerName: 'Venkat Bhanu Prasad',
-    customerEmail: 'venkat.bhanu@apesw.edu.in',
+    customerName: 'Karthik Rao',
+    customerEmail: 'karthik.rao@example.com',
     customerPhone: '+91 99008 34125',
     shippingAddress: '88, Kammanahalli Main Road',
     city: 'Bangalore',
@@ -698,9 +698,9 @@ export const INITIAL_SERVICE_REQUESTS: ServiceRequest[] = [
     serviceId: 'srv-01',
     serviceName: 'Comprehensive Periodic Car Maintenance',
     servicePrice: 2499,
-    customerName: 'Sree Harish P K',
+    customerName: 'Rahul Sharma',
     customerPhone: '+91 98450 12345',
-    customerEmail: 'sreeharish.pk@apesw.edu.in',
+    customerEmail: 'rahul.sharma@example.com',
     vehicleMake: 'Honda',
     vehicleModel: 'Civic V-TEC',
     vehicleYear: '2021',
@@ -721,9 +721,9 @@ export const INITIAL_SERVICE_REQUESTS: ServiceRequest[] = [
     serviceId: 'srv-02',
     serviceName: 'Computerized Engine Diagnostics & ECU Scan',
     servicePrice: 1199,
-    customerName: 'Varun K S',
+    customerName: 'Amit Patel',
     customerPhone: '+91 97412 88990',
-    customerEmail: 'varun.ks@apesw.edu.in',
+    customerEmail: 'amit.patel@example.com',
     vehicleMake: 'Hyundai',
     vehicleModel: 'Creta 1.4 Turbo',
     vehicleYear: '2022',
@@ -759,17 +759,17 @@ export const VEHICLE_DATABASE = {
 
 export const PROJECT_REPORT_METADATA = {
   title: 'AUTO PARTS ECOMMERCE SELLING WEBSITE (APESW)',
-  course: 'VI Semester Bachelor of Computer Applications (BCA)',
-  institution: 'Indian Academy Degree College - Autonomous, Bangalore',
-  academicYear: '2024 - 2025',
+  course: 'Enterprise Web Application Architecture',
+  institution: 'ApexAuto Systems & Engineering',
+  academicYear: '2024 - 2026',
   students: [
-    { name: 'Sree Harish. P K', regNo: '22IABCA071', role: 'Full Stack Architecture & DB Lead' },
-    { name: 'Varun K S', regNo: '22IABCA080', role: 'Frontend & UI/UX Developer' },
-    { name: 'Venkat Bhanu Prasad', regNo: '22IABCA083', role: 'Backend API & QA Testing Lead' }
+    { name: 'Full Stack Engineering Lead', regNo: 'ENG-ARCH-01', role: 'Full Stack Architecture & DB Lead' },
+    { name: 'Frontend & UI/UX Specialist', regNo: 'ENG-UI-02', role: 'Frontend & UI/UX Developer' },
+    { name: 'Backend & QA Engineer', regNo: 'ENG-QA-03', role: 'Backend API & QA Testing Lead' }
   ],
-  internalGuide: 'Mrs. Parvathy. J',
-  headOfDepartment: 'Mrs. Anuradha P',
-  principal: 'Dr. Bharathi. S',
+  internalGuide: 'Technical Architecture Review Board',
+  headOfDepartment: 'Engineering Standards Board',
+  principal: 'Apex Directorate',
   schemaTablesCount: 14,
   tablesList: [
     { name: 'tblbrand_list', purpose: 'Stores registered automotive parts brands (Bosch, Brembo, etc.)' },

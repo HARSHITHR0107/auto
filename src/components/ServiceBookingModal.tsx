@@ -30,16 +30,16 @@ export const ServiceBookingModal: React.FC = () => {
   const [selectedServiceId, setSelectedServiceId] = useState(
     selectedServiceForBooking?.id || services[0]?.id || ''
   );
-  const [customerName, setCustomerName] = useState('Sree Harish P K');
+  const [customerName, setCustomerName] = useState('Rahul Sharma');
   const [customerPhone, setCustomerPhone] = useState('+91 98450 12345');
-  const [customerEmail, setCustomerEmail] = useState('sreeharish.pk@apesw.edu.in');
+  const [customerEmail, setCustomerEmail] = useState('rahul.sharma@example.com');
   const [vehicleMake, setVehicleMake] = useState(savedGarage?.make || 'Honda');
   const [vehicleModel, setVehicleModel] = useState(savedGarage?.model || 'Civic');
   const [vehicleYear, setVehicleYear] = useState(savedGarage?.year || '2022');
   const [vehicleRegNo, setVehicleRegNo] = useState('KA-03-MK-7182');
   const [fuelType, setFuelType] = useState<'Petrol' | 'Diesel' | 'EV' | 'Hybrid' | 'CNG'>('Petrol');
   const [serviceType, setServiceType] = useState<'Doorstep Mobile Mechanic' | 'Workshop Drop-off'>('Doorstep Mobile Mechanic');
-  const [address, setAddress] = useState('42, Hennur Main Road, Kalyan Nagar, Bangalore');
+  const [address, setAddress] = useState('42, 100 Feet Road, Indiranagar, Bangalore');
   const [scheduledDate, setScheduledDate] = useState('2026-10-16');
   const [scheduledTimeSlot, setScheduledTimeSlot] = useState('10:00 AM - 12:30 PM');
   const [notes, setNotes] = useState('Check braking response and general periodic oil change.');

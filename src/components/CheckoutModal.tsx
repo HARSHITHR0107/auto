@@ -26,12 +26,12 @@ export const CheckoutModal: React.FC = () => {
   } = useApp();
 
   // Form State
-  const [customerName, setCustomerName] = useState('Sree Harish P K');
-  const [customerEmail, setCustomerEmail] = useState('sreeharish.pk@apesw.edu.in');
+  const [customerName, setCustomerName] = useState('Rahul Sharma');
+  const [customerEmail, setCustomerEmail] = useState('rahul.sharma@example.com');
   const [customerPhone, setCustomerPhone] = useState('+91 98450 12345');
-  const [shippingAddress, setShippingAddress] = useState('42, Hennur Main Road, Kalyan Nagar');
+  const [shippingAddress, setShippingAddress] = useState('42, 100 Feet Road, Indiranagar');
   const [city, setCity] = useState('Bangalore');
-  const [postalCode, setPostalCode] = useState('560043');
+  const [postalCode, setPostalCode] = useState('560038');
   const [paymentMethod, setPaymentMethod] = useState<'UPI / QR' | 'Credit/Debit Card' | 'Net Banking' | 'Cash on Delivery'>('UPI / QR');
 
   // Success state

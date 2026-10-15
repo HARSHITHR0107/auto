@@ -6,13 +6,10 @@ import {
   Wrench,
   ShieldCheck,
   Package,
-  FileText,
   MapPin,
   Phone,
-  Mail,
-  GraduationCap
+  Mail
 } from 'lucide-react';
-import { PROJECT_REPORT_METADATA } from '../data/mockData';
 
 export const Footer: React.FC = () => {
   const { setActiveModal, setTrackingOrderId } = useApp();
@@ -139,29 +136,34 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Col 4: Academic Project Attribution */}
+          {/* Col 4: Quality & Trust Guarantee */}
           <div>
             <h4 style={{ color: '#f8fafc', fontWeight: 700, marginBottom: '1rem', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <GraduationCap size={16} color="#38bdf8" /> Academic Project
+              <ShieldCheck size={16} color="#38bdf8" /> Apex Guarantee
             </h4>
             <p style={{ fontSize: '0.8rem', lineHeight: 1.5, marginBottom: '10px', color: '#cbd5e1' }}>
-              <strong>{PROJECT_REPORT_METADATA.title}</strong><br />
-              {PROJECT_REPORT_METADATA.institution}<br />
-              Academic Year 2024-25 • VI Sem BCA
+              <strong>100% Genuine Auto Spares</strong><br />
+              Direct from certified OEM distributors across India.
             </p>
-            <div style={{ fontSize: '0.78rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '12px' }}>
-              Developed by:<br />
-              • Sree Harish. P K (22IABCA071)<br />
-              • Varun K S (22IABCA080)<br />
-              • Venkat Bhanu Prasad (22IABCA083)
+            <div style={{ fontSize: '0.78rem', color: '#94a3b8', lineHeight: 1.6, marginBottom: '12px' }}>
+              • Certified OEM & Performance Parts<br />
+              • Rigorous 65-Point Quality Inspection<br />
+              • Dedicated On-Demand Mechanics<br />
+              • 10-Day Hassle-Free Replacement
             </div>
-            <button
-              onClick={() => setActiveModal('report')}
-              className="btn-outline"
-              style={{ padding: '6px 12px', fontSize: '0.75rem' }}
-            >
-              <FileText size={13} /> View Full Report & Diagrams
-            </button>
+            <div style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '6px 12px',
+              fontSize: '0.75rem',
+              color: '#34d399',
+              background: 'rgba(16, 185, 129, 0.1)',
+              borderRadius: 'var(--radius-sm)',
+              border: '1px solid rgba(16, 185, 129, 0.2)'
+            }}>
+              <ShieldCheck size={14} /> Verified Quality Standards
+            </div>
           </div>
         </div>
 
